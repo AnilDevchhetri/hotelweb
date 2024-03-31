@@ -1,0 +1,113 @@
+
+
+:root{
+  --primary-color: #2ec1ac;
+  --secondory-color: #279e8c;
+  --poppins-font:"Poppins", sans-serif;
+  --merienda-font:"Merienda", sans-serif;
+}
+
+
+*{
+    font-family: var(--poppins-font);
+    
+}
+.h-font{
+  font-family: var(--merienda-font);
+}
+.h-line{
+  width:150px;
+  margin:0 auto;
+  height: 1.7px;
+}
+.h2-line{
+  width:100px;
+  margin:0 auto;
+  height: 1.7px;
+  margin-top:2px;
+}
+.custom-alert{
+  position:fixed;
+  top:85px;
+  right:25px;
+  z-index: 111;
+}
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+.custom-bg{
+  background-color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+}
+.custom-bg:hover{
+  background-color: var(--secondory-color);
+}
+.btn:disabled{
+  background-color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+  cursor: none;
+}
+.availability-form{
+  margin-top:-50px;
+  z-index:2;
+  position:relative;
+}
+
+/* our room section  */
+.our-rooms .card{
+  max-width: 350px;
+  margin: auto;
+
+}
+.row  .card{
+  cursor: pointer;
+}
+/* our room section  */
+
+
+/* Facilities page  */
+.pop{
+  cursor: pointer;
+}
+.pop:hover{
+  border-top-color:var(--secondory-color) !important;
+  transform: scale(1.03);
+  transform-origin: all 0.3s ease-in-out;
+  
+}
+/* Facilities page  */
+
+
+/* about page  */
+.box:hover{
+  
+  border-top-color:var(--secondory-color) !important;
+}
+/* about page  */
+
+
+/* Contact page */
+.contact-form label{
+  font-weight: 500;
+}
+
+.contact-form textarea{
+  resize: none;
+}
+
+/* Rooms page */
+h5.fillter-header{
+font-size: 18px;
+}
+
+#main-nav-bar .navbar-nav .nav-item .nav-link{
+  cursor: pointer;
+}

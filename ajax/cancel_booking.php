@@ -1,0 +1,18 @@
+<?php
+require('../admin/inc/db_config.php');
+require('../admin/inc/essentials.php');
+require("../inc/sendgrid/sendgrid-php.php");
+session_start();
+if (!(isset($_SESSION['login']) && $_SESSION['login'] == true)) {
+    redirect('rooms.php');
+    
+}
+if(isset($_POST['cancel_booking'])){
+    $frm_data = filteration($_POST);
+    $query = "UPDATE  `booking_order` SET `booking_status`=? WHERE `booking_id`=? AND `user_id`=?";
+    $value = ['cancelled',$frm_data['id'],$_SESSION['uId']];
+    $result = update($query,$value,'sii');
+    echo $result;  
+
+
+}
